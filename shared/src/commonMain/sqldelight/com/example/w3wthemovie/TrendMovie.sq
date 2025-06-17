@@ -1,0 +1,16 @@
+CREATE TABLE TrendMovie(
+    id INTEGER NOT NULL PRIMARY KEY,
+    title TEXT NOT NULL,
+    image TEXT,
+    year TEXT,
+    rating REAL
+);
+
+insert:
+INSERT OR REPLACE INTO TrendMovie(id, title, image, year, rating) VALUES(?, ?, ?, ?, ?);
+
+selectAll:
+SELECT * FROM TrendMovie;
+
+deleteAll:
+DELETE FROM TrendMovie;

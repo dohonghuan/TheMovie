@@ -1,0 +1,67 @@
+import kotlin.Boolean;
+
+CREATE TABLE MovieDetailTable (
+    id INTEGER NOT NULL PRIMARY KEY,
+    isAdult INTEGER AS Boolean,
+    backdrop TEXT,
+    collectionName TEXT,
+    collectionPoster TEXT,
+    collectionBackdrop TEXT,
+    budget INTEGER NOT NULL,
+    genres TEXT NOT NULL,
+    homepage TEXT NOT NULL,
+    overview TEXT NOT NULL,
+    popularity REAL NOT NULL,
+    poster TEXT,
+    productionCompanies TEXT NOT NULL,
+    productionCountries TEXT NOT NULL,
+    releaseDate TEXT NOT NULL,
+    revenue REAL NOT NULL,
+    runtime TEXT NOT NULL,
+    spokenLanguages TEXT NOT NULL,
+    status TEXT NOT NULL,
+    tagline TEXT NOT NULL,
+    title TEXT NOT NULL,
+    voteAverage REAL NOT NULL,
+    voteCount INTEGER NOT NULL,
+    syncTime INTEGER NOT NULL
+);
+
+insert:
+INSERT OR REPLACE INTO MovieDetailTable(
+    id,
+    isAdult,
+    backdrop,
+    collectionName,
+    collectionPoster,
+    collectionBackdrop,
+    budget,
+    genres,
+    homepage,
+    overview,
+    popularity,
+    poster,
+    productionCompanies,
+    productionCountries,
+    releaseDate,
+    revenue,
+    runtime,
+    spokenLanguages,
+    status,
+    tagline,
+    title,
+    voteAverage,
+    voteCount,
+    syncTime)
+VALUES ?;
+
+selectById:
+SELECT *
+FROM MovieDetailTable
+WHERE id = ?;
+
+selectAll:
+SELECT * FROM MovieDetailTable;
+
+deleteAll:
+DELETE FROM MovieDetailTable;
