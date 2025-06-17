@@ -24,7 +24,7 @@
 - **Kotlinx Serialization:** For JSON parsing and serialization.
 - **Kotlinx DateTime:** For multiplatform date and time manipulation.
 - **Manual Dependency Injection**
-- **Jetpack Compose:** For building the native UI declaratively.
+- **Jetpack Compose, SwiftUI:** For building the native UI declaratively.
 - **Material 3 Design:** Modern UI components and theming.
 - **Android Jetpack:**
   - **ViewModel:** For UI-related data holder, lifecycle-aware.
@@ -59,11 +59,9 @@ To build and run in iOS device, paste yout apiKey to `AppConfig` in `shared\src\
 
 ## Demo
 
-[Video](https://www.youtube.com/playlist?list=PLnBRK1vmLxkvYMZd8Gtjd-869IL2A2ROR)
+[Videos](https://www.youtube.com/playlist?list=PLnBRK1vmLxkvYMZd8Gtjd-869IL2A2ROR)
 
 <img src="Screenshot_20250617_085318.png" width="200">
-<img src="Screenshot_20250617_085318.png" width="200">
-
+<img src="Screenshot_20250617_085334.png" width="200">
 <img src="Screenshot_20250617_085358.png" width="200">
-
 <img src="ios.png" width="200">
