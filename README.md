@@ -39,6 +39,8 @@ Create the local.properties file in the project's root folder. This file contain
 apiKey=your_api_key
 ```
 
+To build and run in iOS device, paste yout apiKey to `AppConfig` in `shared\src\iosMain\...` deirectory
+
 ## Checklist
 
 - ✅ Get the trending movies for
@@ -47,18 +49,21 @@ apiKey=your_api_key
 - ✅ Show all movie information on detail sreen.
 - ✅ Allow any hyperlinks to be opened.
 - ✅ Work offline if movie details are opened once before (refresh after 24 hours)
+- ✅ Display content edge-to-edge
 - ✅ Use the latest Jetpack architecture recommendations by Google
 - ✅ Shared code is iOS-friendly
 - ✅ Create Unit Tests to make sure caching validation is handled correctly.
 - ✅ Create a simple UI Test.
 - ✅ Error message handling (offline/online/failed API calls with specific screen).
-- ✅ Display content edge-to-edge
+- ✅ Create a simple iOS app.
 
 ## Demo
 
-[Youtube](https://www.youtube.com/playlist?list=PLnBRK1vmLxkvYMZd8Gtjd-869IL2A2ROR)
+[Video](https://www.youtube.com/playlist?list=PLnBRK1vmLxkvYMZd8Gtjd-869IL2A2ROR)
 
 <img src="Screenshot_20250617_085318.png" width="200">
 <img src="Screenshot_20250617_085318.png" width="200">
 
 <img src="Screenshot_20250617_085358.png" width="200">
+
+<img src="ios.png" width="200">

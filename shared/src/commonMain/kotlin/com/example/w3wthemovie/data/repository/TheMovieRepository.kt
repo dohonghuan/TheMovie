@@ -20,6 +20,8 @@ class TheMovieRepository(
     private val dataStorage: DataStorage,
     private val validateCacheTimeUseCase: ValidateCacheTimeUseCase,
 ) {
+
+    @Throws(Throwable::class)
     suspend fun fetchTrendingMovies(): List<Movie>  {
         val syncTime = dataStorage.getTrendMovieSyncTime().firstOrNull()
         return if (syncTime == null || !validateCacheTimeUseCase(syncTime)) {
@@ -32,9 +34,11 @@ class TheMovieRepository(
         }
     }
 
+    @Throws(Throwable::class)
     suspend fun searchMovies(searchValue: String): List<Movie> =
         httpClient.searchMovies(searchValue).results.dtoMapToMovies()
 
+    @Throws(Throwable::class)
     suspend fun fetchMovieDetail(id: Long): MovieDetail {
         val cachedDetail = movieDatabase.getDetail(id)
         return if (cachedDetail == null || !validateCacheTimeUseCase(cachedDetail.syncTime)) {

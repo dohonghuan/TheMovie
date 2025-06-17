@@ -52,6 +52,11 @@ kotlin {
             implementation(libs.androidx.datastore.preferences)
         }
 
+        iosMain.dependencies {
+            implementation(libs.ktor.client.darwin)
+            implementation(libs.native.driver)
+        }
+
         commonTest.dependencies {
             implementation(libs.kotlin.test)
             implementation(libs.kotlinx.coroutines.test)
