@@ -39,10 +39,26 @@ Create the local.properties file in the project's root folder. This file contain
 apiKey=your_api_key
 ```
 
+## Checklist
+
+- ✅ Get the trending movies for
+- ✅ Trending movies should work offline after loading once (refresh after 24 hours)
+- ✅ Search movie when the search field text is not empty
+- ✅ Show all movie information on detail sreen.
+- ✅ Allow any hyperlinks to be opened.
+- ✅ Work offline if movie details are opened once before (refresh after 24 hours)
+- ✅ Use the latest Jetpack architecture recommendations by Google
+- ✅ Shared code is iOS-friendly
+- ✅ Create Unit Tests to make sure caching validation is handled correctly.
+- ✅ Create a simple UI Test.
+- ✅ Error message handling (offline/online/failed API calls with specific screen).
+- ✅ Display content edge-to-edge
+
 ## Demo
 
-![](video_1.mp4)
+[Youtube](https://www.youtube.com/playlist?list=PLnBRK1vmLxkvYMZd8Gtjd-869IL2A2ROR)
 
-![](video_2.mp4)
+<img src="Screenshot_20250617_085318.png" width="200">
+<img src="Screenshot_20250617_085318.png" width="200">
 
-![](video_3.mp4)
+<img src="Screenshot_20250617_085358.png" width="200">
